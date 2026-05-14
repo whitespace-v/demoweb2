@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
+import NavBar from '../components/NavBar'
+
 function Signup() {
    const [login, setLogin] = useState("")
    const [pwd, setPwd] = useState("")
@@ -47,6 +49,8 @@ function Signup() {
 
   return (
     <div>
+        <NavBar></NavBar>
+        <div>Страница Регистрации</div>
         <div>
             <div>Логин</div>
             <input
@@ -84,6 +88,12 @@ function Signup() {
         </div>
         <div onClick={async () => await signup()}>
             Регистрация
+        </div>
+
+        <br />
+        <br />
+        <div>Уже есть аккаунт ? 
+            <div onClick={() => navigate('/signin')}>Вход</div>
         </div>
     </div>
   )

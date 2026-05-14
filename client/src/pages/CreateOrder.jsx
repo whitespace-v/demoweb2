@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import NavBar from '../components/NavBar'
 
 export default function CreateOrder() {
   const navigate = useNavigate()
@@ -17,7 +18,8 @@ export default function CreateOrder() {
   }
   return (
     <div>
-      <div>история зявок</div>
+      <NavBar/>
+      <div>история заявок</div>
       <div>
         {orders && orders.map(o => <div>
           <div>{o.addres}</div>

@@ -1,5 +1,7 @@
+import Admin from "./pages/Admin";
 import CreateOrder from "./pages/CreateOrder";
 import FillOrder from "./pages/FillOrder";
+import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
@@ -8,8 +10,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path='/signup' element={<Signup/>}/>
-         {/* <Route path='/signin' element={<Signin/>}/> */}
-        {/* <Route path='/admin' element={<Admin/>}/> */}
+         <Route path='/signin' element={<Signin/>}/>
+        <Route path='/admin' element={<Admin/>}/>
         <Route path='/create-order' element={<CreateOrder/>}/>
         <Route path='/fill-order' element={<FillOrder/>}/>
       </Routes>

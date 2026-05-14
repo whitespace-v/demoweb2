@@ -72,7 +72,9 @@ const Order = sequelize.define('order', {
     licenseNumber: {type: STRING},
     licenseIssued: {type: STRING},
     make: {type: STRING}, 
-    model: {type: STRING}
+    model: {type: STRING},
+    status: {type: STRING},
+    reason: {type: STRING}
 })
 
 User.hasMany(Order, {as: "orders"})

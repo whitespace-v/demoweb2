@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState } from 'react'
+import NavBar from '../components/NavBar'
 
 export default function FillOrder() {
     const [addres, setAddres] = useState()
@@ -24,6 +25,7 @@ export default function FillOrder() {
     }
   return (
     <div>
+        <NavBar/>
         <div>
             <div>
                 <div>

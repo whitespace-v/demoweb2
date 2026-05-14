@@ -6,6 +6,7 @@ const router = new Router()
 router.post("/signup", UserController.signup)
 router.post("/create-order", UserController.createOrder)
 router.get('/get-orders/:token', UserController.getOrders)
-// router.post("/signin", UserController.signin)
-
+router.post("/signin", UserController.signin)
+router.get("/getall", UserController.getAll)
+router.pose("/edit", UserController.edit)
 module.exports = router
