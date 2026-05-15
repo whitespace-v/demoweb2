@@ -26,6 +26,9 @@ export default function FillOrder() {
   return (
     <div>
         <NavBar/>
+          <div className='title'>
+                Заполнение заявки
+      </div>
         <div>
             <div>
                 <div>
@@ -52,13 +55,15 @@ export default function FillOrder() {
                     </div>
                 </div>     
             </div>
-            <div>
-                {cars.map(m => <div>
-                    <div onClick={() => setMake(m.make)}>{m.make}</div>
-                    {m.models.map(model => <div onClick={() => setModel(model)}>{model}</div>)}
+              <p>Выберите марку и модель:</p>
+            <div className='cars'>
+              
+                {cars.map(m => <div className='makes'>
+                    <div onClick={() => setMake(m.make)} className='button'>{m.make}</div>
+                    {m.models.map(model => <div className='button' onClick={() => setModel(model)}>{model}</div>)}
                 </div>)}
             </div>
-            <div onClick={async () => await createOrder()}>Создать заявку</div>
+            <div onClick={async () => await createOrder()} className='accent'>Создать заявку</div>
         </div>
     </div>
   )

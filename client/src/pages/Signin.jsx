@@ -31,7 +31,9 @@ export default function Signin() {
     <div>
         <NavBar/>
         <div>
-            <div>Страница авторизации</div>
+              <div className='title'>
+Страница авторизации
+      </div>
             <div>
                 <div>
                     Логин

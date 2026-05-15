@@ -18,8 +18,13 @@ export default function CreateOrder() {
   }
   return (
     <div>
+      
       <NavBar/>
+        <div className='title'>
+          Создание заявки
+      </div>
       <div>история заявок</div>
+      
       <div>
         {orders && orders.map(o => <div>
           <div>{o.addres}</div>

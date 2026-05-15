@@ -1,0 +1,21 @@
+
+.navbar{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+
+}
+.navbar > div {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar > div:hover{
+    cursor: pointer;
+    background-color: rgba(0, 85, 255, 0.256);
+    transition: all .5s;
+}

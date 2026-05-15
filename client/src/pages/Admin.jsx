@@ -22,7 +22,10 @@ export default function Admin() {
   }
   return (
     <div>
-        Панель администратора
+      <div className='title'>
+ Панель администратора
+      </div>
+       
         <NavBar/>
         {data.map(u => <div>
             {u.id}

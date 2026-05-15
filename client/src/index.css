@@ -5,9 +5,72 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #30a6ac;
+  margin: 15px;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+input {
+  border-radius: 15px;
+  border: 1px solid rgb(57, 53, 53);
+  background-color: gray;
+}
+
+
+.title{
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.button{
+  padding: 15px;
+  border: 1px solid black;
+  cursor: pointer;
+  border-radius: 6px;
+  background-color: #12699c7e;
+  width: 80px;
+  text-align: center;
+}
+
+.button:hover{
+  background-color: aqua;
+  font-size: 22px;
+  transition: all linear 200ms;
+}
+
+.cars{
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+  border-radius: 12px;
+width: fit-content;
+  display: flex;
+  gap: 25px;
+}
+
+.makes{
+  display: flex;
+  flex-direction: column;
+  gap:5px
+}
+
+
+.accent{
+  border-radius: 6px;
+  width: 300px;
+  text-align: center;
+  padding: 5px 15px;
+  background: rgb(160, 125, 9);
+  border: 1px solid black;
+  cursor: pointer;
+}
+.accent:hover{
+  scale: 0.9;
+  transition: 200ms all linear;
 }

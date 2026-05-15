@@ -50,7 +50,9 @@ function Signup() {
   return (
     <div>
         <NavBar></NavBar>
-        <div>Страница Регистрации</div>
+            <div className='title'>
+Страница Регистрация
+      </div>
         <div>
             <div>Логин</div>
             <input
